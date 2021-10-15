@@ -1,4 +1,4 @@
-import 'tailwindcss/tailwind.css'
+// import 'tailwindcss/tailwind.css'
 import Head from 'next/head'
 import { ToastContainer, toast } from 'react-toastify'
 import React from 'react'

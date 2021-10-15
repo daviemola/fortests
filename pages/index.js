@@ -5,7 +5,7 @@ import React from 'react'
 import { API_URL } from '../config/index'
 import 'react-toastify/dist/ReactToastify.min.css'
 import { useRouter } from 'next/router'
-import 'tailwindcss/tailwind.css'
+import * as ga from '../lib/ga'
 
 export default function index() {
   const router = useRouter()
@@ -45,7 +45,6 @@ export default function index() {
     console.log(data)
 
     if (!res.ok) {
-      values.email_address = ' '
       toast.error('Something went wrong. Try again.', {
         position: 'top-right',
         autoClose: 5000,
@@ -233,13 +232,21 @@ const DEFAULT_FEATURES = [
   'Enhanced Transcripts',
 ]
 
-const GetAccessButton = ({ handleClick }) => {
+const GetAccessButton = ({}) => {
   let label = 'Pre-order'
+  const search = () => {
+    ga.event({
+      action: 'Clicked pre-order',
+      params: {
+        search_term: 'To give KES 250 off',
+      },
+    })
+  }
   return (
     <Link href="/congratulations">
       <a
         className="mt-8 px-5 py-4 text-center bg-blue-600 text-white font-semibold rounded-md w-full hover:bg-blue-700 transition-all duration-300 ease-in-out hover:scale-105"
-        onClick={handleClick}
+        onClick={() => search()}
         type="button"
       >
         {label}
