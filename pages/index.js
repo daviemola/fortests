@@ -97,16 +97,16 @@ export default function index() {
       <div className="dark:bg-gray-900 bg-gray-50 dark:text-white text-gray-900 px-5 pb-8">
         <header className="text-center py-16 flex flex-col items-center">
           <h1 className="md:text-5xl text-3xl font-extrabold leading-tighter max-w-screen-md">
-            Precise & short courses to assist you to{' '}
+            Brief and comprehensive courses on{' '}
             <span className="dark:text-yellow-300 text-yellow-500">
-              excel and understand
-            </span>{' '}
-            various concepts as an MBA student.
+              MBA units{' '}
+            </span>
+            for busy professionals.
           </h1>
           <h2 className="text-xl font-light max-w-2xl pt-8 leading-tight dark:text-gray-200 text-gray-700">
-            Learn the skills you need to excel in your examinations and CATS.
-            Included are pastpapers with solutions. Watch talks and read
-            articles by experts.
+            High quality video tutorials and learning resources i.e. pastpapers
+            with solutions to assist you understand various critical concepts as
+            an MBA student.
           </h2>
         </header>
 

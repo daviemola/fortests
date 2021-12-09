@@ -164,9 +164,7 @@ export default function congratulations() {
               </div>
             </div>
             <h2 className="text-xl font-light max-w-2xl pt-8 leading-tight dark:text-gray-200 text-center text-gray-700">
-              This was a test to find out if this will be useful to the student
-              community, instead of putting resources and time only to find out
-              people won't use the application.
+              We are working behind the scenes to make this a reality.
             </h2>
           </section>
         </main>
