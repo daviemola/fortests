@@ -41,8 +41,10 @@ export default function index() {
       body: JSON.stringify(values),
     })
 
+    alert(res)
+
     const data = await res.json()
-    console.log(data)
+    alert(data)
 
     if (!res.ok) {
       toast.error('Something went wrong. Try again.', {
@@ -156,7 +158,7 @@ export default function index() {
                   <form onSubmit={handleSubmit}>
                     <div className="shadow flex w-full">
                       <input
-                        type="text"
+                        type="email"
                         placeholder="Enter your email"
                         className="w-full h-12 rounded-md py-2 px-4 bg-white"
                         name="email_address"

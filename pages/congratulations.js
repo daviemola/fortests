@@ -40,6 +40,8 @@ export default function congratulations() {
       body: JSON.stringify(values),
     })
 
+    console.log(res)
+
     if (!res.ok) {
       console.log(res)
       toast.error('Something went wrong. Try again.', {
@@ -132,7 +134,7 @@ export default function congratulations() {
                   <form onSubmit={handleSubmit}>
                     <div className="shadow flex w-full">
                       <input
-                        type="text"
+                        type="email"
                         placeholder="Enter your email"
                         className="w-full h-12 rounded-md py-2 px-4"
                         name="email_address"
