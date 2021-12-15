@@ -41,10 +41,9 @@ export default function index() {
       body: JSON.stringify(values),
     })
 
-    alert(res)
+    // console.log(res)
 
     const data = await res.json()
-    alert(data)
 
     if (!res.ok) {
       toast.error('Something went wrong. Try again.', {

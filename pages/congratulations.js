@@ -40,10 +40,8 @@ export default function congratulations() {
       body: JSON.stringify(values),
     })
 
-    console.log(res)
-
     if (!res.ok) {
-      console.log(res)
+      // console.log(res)
       toast.error('Something went wrong. Try again.', {
         position: 'top-right',
         autoClose: 5000,
